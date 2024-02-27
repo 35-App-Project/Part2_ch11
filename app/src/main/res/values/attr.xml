@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View 의 속성을 커스텀 하는 법-->
+    <declare-styleable name="MenuView">
+        <attr name="imageUrl" format="string"/>
+        <attr name="title" format="string"/>
+    </declare-styleable>
+    
+</resources>

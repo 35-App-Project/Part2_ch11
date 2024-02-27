@@ -27,10 +27,19 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 it.progress=homeData.user.starCount
                 it.max=homeData.user.totalCount
             }
-        }
 
-        Glide.with(binding.appbarImageView)
-            .load(homeData.appbarImage)
-            .into(binding.appbarImageView)
+            Glide.with(binding.appbarImageView)
+                .load(homeData.appbarImage)
+                .into(binding.appbarImageView)
+
+            // 커스텀 View 추가
+            recommendMenuList.menuLayout.addView(
+                MenuView(context=requireContext()).apply {
+                    setTitle("카페 모카")
+                    setImageView("https://picsum.photos/120/120")
+                }
+            )
+
+        }
     }
 }
