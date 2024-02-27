@@ -4,4 +4,5 @@
     <string name="home">홈</string>
     <string name="order">주문</string>
     <string name="appbar_title_text">%s님\n 오늘도 커피 한 잔 어떠세요?</string>
+    <string name="appbar_star_title">%d/%d★</string>
 </resources>
