@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
             setContentView(it.root)
         }
 
+        // Bottom Navigation 사용 방법
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
 

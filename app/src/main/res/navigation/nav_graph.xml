@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
-
+    <!-- nav_graph 의 id와 menu 의 id 를 같게 해야 한다 -->
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.choi.part2_ch11.HomeFragment"
