@@ -22,11 +22,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         initRecommend(homeData, menuData)
         initBanner(homeData)
         initFood(menuData)
-
-        binding.scrollView.setOnScrollChangeListener { view, _, scrollY, _, oldScrollY ->
-            if (scrollY==0) binding.floatingActionButton.extend()
-            else binding.floatingActionButton.shrink()
-        }
+        initFloatingActionButton()
 
     }
 
@@ -38,7 +34,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 homeData.user.totalCount
             )
 
-            appBarProgressBar.max=homeData.user.totalCount
+            appBarProgressBar.max = homeData.user.totalCount
 
 
             Glide.with(appbarImageView)
@@ -46,10 +42,10 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
                 .into(binding.appbarImageView)
         }
 
-        ValueAnimator.ofInt(0,homeData.user.starCount).apply {
-            duration=1000
+        ValueAnimator.ofInt(0, homeData.user.starCount).apply {
+            duration = 1000
             addUpdateListener {
-                binding.appBarProgressBar.progress=it.animatedValue as Int
+                binding.appBarProgressBar.progress = it.animatedValue as Int
             }
             start()
         }
@@ -94,6 +90,13 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
             }
 
             foodMenuList.titleTextView.text = getString(R.string.food_title)
+        }
+    }
+
+    private fun initFloatingActionButton() {
+        binding.scrollView.setOnScrollChangeListener { view, _, scrollY, _, oldScrollY ->
+            if (scrollY == 0) binding.floatingActionButton.extend()
+            else binding.floatingActionButton.shrink()
         }
     }
 }

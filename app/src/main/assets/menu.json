@@ -1,0 +1,50 @@
+{
+  "coffee" : [
+    {
+      "name" : "아메리카노",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "카페 라떼",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "마끼아또",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "카푸치노",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "자바칩",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "자몽에이드",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "플레인스무디",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "카페모카",
+      "image" : "https://picsum.photos/100/100"
+    }
+
+  ],
+
+  "food" : [
+    {
+      "name" : "마카롱",
+      "image" : "https://picsum.photos/100/100"
+    },
+    {
+      "name" : "케이크",
+      "image" : "https://picsum.photos/100/100"
+    }
+
+
+  ]
+}
